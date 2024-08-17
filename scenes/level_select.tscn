@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://bi5w8ofk6nh6k"]
+[gd_scene load_steps=9 format=3 uid="uid://bi5w8ofk6nh6k"]
 
+[ext_resource type="Script" path="res://scripts/level_select.gd" id="1_mv5h7"]
 [ext_resource type="Texture2D" uid="uid://dyhyvwe5matmg" path="res://assets/padlock (1).png" id="1_red63"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5ae57"]
@@ -25,6 +26,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_mv5h7")
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 1
@@ -89,3 +91,9 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_8oa3t")
 theme_override_styles/hover = SubResource("StyleBoxFlat_okycx")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_siicm")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_1yru3")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(575, 325)
+position_smoothing_enabled = true
+
+[connection signal="pressed" from="Button3" to="." method="_on_firstlvl_pressed"]
