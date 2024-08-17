@@ -38,13 +38,19 @@ anchor_bottom = 0.5
 offset_left = -67.0
 offset_top = -250.0
 offset_right = 68.0
-offset_bottom = -122.0
+offset_bottom = -126.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/normal = SubResource("StyleBoxEmpty_5ae57")
 theme_override_styles/hover = SubResource("StyleBoxFlat_okycx")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_siicm")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_1yru3")
+
+[node name="ColorRect" type="ColorRect" parent="Button"]
+layout_mode = 0
+offset_right = 134.0
+offset_bottom = 124.0
+color = Color(0.34902, 0.34902, 0.34902, 0.427451)
 
 [node name="Sprite2D" type="Sprite2D" parent="Button"]
 position = Vector2(67, 68)
@@ -68,6 +74,11 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_nlaeu")
 theme_override_styles/hover = SubResource("StyleBoxFlat_okycx")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_siicm")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_1yru3")
+
+[node name="ColorRect" type="ColorRect" parent="Button2"]
+offset_right = 273.0
+offset_bottom = 153.0
+color = Color(0.34902, 0.34902, 0.34902, 0.427451)
 
 [node name="Sprite2D" type="Sprite2D" parent="Button2"]
 position = Vector2(137.5, 74)
@@ -96,4 +107,6 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_1yru3")
 position = Vector2(575, 325)
 position_smoothing_enabled = true
 
+[connection signal="pressed" from="Button" to="." method="_on_3rdlvl_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_2ndlvl_pressed"]
 [connection signal="pressed" from="Button3" to="." method="_on_firstlvl_pressed"]

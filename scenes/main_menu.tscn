@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://cep10wb7m1hfo"]
+[gd_scene load_steps=7 format=3 uid="uid://cep10wb7m1hfo"]
 
 [ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_83gt4"]
+[ext_resource type="FontFile" uid="uid://v7yp2tb0q4hx" path="res://assets/alpha_echo.ttf" id="2_g2xek"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_himy3"]
 bg_color = Color(1, 1, 1, 1)
@@ -115,13 +116,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -192.0
-offset_top = -197.0
-offset_right = 192.0
-offset_bottom = -113.0
+offset_left = -326.0
+offset_top = -200.0
+offset_right = 346.0
+offset_bottom = -11.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 61
+theme_override_fonts/font = ExtResource("2_g2xek")
+theme_override_font_sizes/font_size = 96
 text = "Title Pending"
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
