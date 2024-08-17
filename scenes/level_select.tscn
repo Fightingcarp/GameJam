@@ -1,0 +1,91 @@
+[gd_scene load_steps=8 format=3 uid="uid://bi5w8ofk6nh6k"]
+
+[ext_resource type="Texture2D" uid="uid://dyhyvwe5matmg" path="res://assets/padlock (1).png" id="1_red63"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5ae57"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_okycx"]
+bg_color = Color(0.501961, 0.662745, 0.996078, 0.576471)
+shadow_color = Color(0.192157, 0.423529, 1, 0.615686)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_siicm"]
+bg_color = Color(0.0326516, 0.228122, 0.776067, 0.576471)
+shadow_color = Color(0.192157, 0.423529, 1, 0.615686)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1yru3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nlaeu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8oa3t"]
+
+[node name="LevelSelect" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -67.0
+offset_top = -250.0
+offset_right = 68.0
+offset_bottom = -122.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5ae57")
+theme_override_styles/hover = SubResource("StyleBoxFlat_okycx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_siicm")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1yru3")
+
+[node name="Sprite2D" type="Sprite2D" parent="Button"]
+position = Vector2(67, 68)
+scale = Vector2(0.128911, 0.128911)
+texture = ExtResource("1_red63")
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -136.5
+offset_top = -113.0
+offset_right = 136.5
+offset_bottom = 39.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nlaeu")
+theme_override_styles/hover = SubResource("StyleBoxFlat_okycx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_siicm")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1yru3")
+
+[node name="Sprite2D" type="Sprite2D" parent="Button2"]
+position = Vector2(137.5, 74)
+scale = Vector2(0.132272, 0.132272)
+texture = ExtResource("1_red63")
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -93.5
+offset_top = 50.0
+offset_right = 93.5
+offset_bottom = 216.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8oa3t")
+theme_override_styles/hover = SubResource("StyleBoxFlat_okycx")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_siicm")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1yru3")
