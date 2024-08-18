@@ -76,6 +76,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_siicm")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_1yru3")
 
 [node name="ColorRect" type="ColorRect" parent="Button2"]
+layout_mode = 0
 offset_right = 273.0
 offset_bottom = 153.0
 color = Color(0.34902, 0.34902, 0.34902, 0.427451)
