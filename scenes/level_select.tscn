@@ -28,7 +28,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_mv5h7")
 
-[node name="Button" type="Button" parent="."]
+[node name="ButtonLvl3" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -46,18 +46,18 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_okycx")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_siicm")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_1yru3")
 
-[node name="ColorRect" type="ColorRect" parent="Button"]
+[node name="ColorRect" type="ColorRect" parent="ButtonLvl3"]
 layout_mode = 0
 offset_right = 134.0
 offset_bottom = 124.0
 color = Color(0.34902, 0.34902, 0.34902, 0.427451)
 
-[node name="Sprite2D" type="Sprite2D" parent="Button"]
+[node name="Sprite2D" type="Sprite2D" parent="ButtonLvl3"]
 position = Vector2(67, 68)
 scale = Vector2(0.128911, 0.128911)
 texture = ExtResource("1_red63")
 
-[node name="Button2" type="Button" parent="."]
+[node name="ButtonLvl2" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -75,18 +75,18 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_okycx")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_siicm")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_1yru3")
 
-[node name="ColorRect" type="ColorRect" parent="Button2"]
+[node name="ColorRect" type="ColorRect" parent="ButtonLvl2"]
 layout_mode = 0
 offset_right = 273.0
 offset_bottom = 153.0
 color = Color(0.34902, 0.34902, 0.34902, 0.427451)
 
-[node name="Sprite2D" type="Sprite2D" parent="Button2"]
+[node name="Sprite2D" type="Sprite2D" parent="ButtonLvl2"]
 position = Vector2(137.5, 74)
 scale = Vector2(0.132272, 0.132272)
 texture = ExtResource("1_red63")
 
-[node name="Button3" type="Button" parent="."]
+[node name="ButtonLvl1" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -108,6 +108,7 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_1yru3")
 position = Vector2(575, 325)
 position_smoothing_enabled = true
 
-[connection signal="pressed" from="Button" to="." method="_on_3rdlvl_pressed"]
-[connection signal="pressed" from="Button2" to="." method="_on_2ndlvl_pressed"]
-[connection signal="pressed" from="Button3" to="." method="_on_firstlvl_pressed"]
+[connection signal="pressed" from="ButtonLvl3" to="." method="_on_3rdlvl_pressed"]
+[connection signal="pressed" from="ButtonLvl2" to="." method="_on_2ndlvl_pressed"]
+[connection signal="pressed" from="ButtonLvl1" to="." method="_on_firstlvl_pressed"]
+[connection signal="pressed" from="ButtonLvl1" to="." method="_on_button_lvl_1_pressed"]
